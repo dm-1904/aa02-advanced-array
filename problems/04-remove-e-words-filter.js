@@ -9,13 +9,20 @@ Examples:
 
 console.log(removeEWords('What time is it everyone?')); // 'What is it'
 console.log(removeEWords('Enter the building')); // 'building'
+ let mod1 = sentence.split();
+  let mod2 = sentence.filter((el) => el.includes('e'));
+  let mod3 = sentence.toString();
 
+  return sentence.split().filter(el => !el.sentence.includes('e').toString())
 */
 
 let removeEWords = function(sentence) {
-    // Your code here 
+  return sentence.split(' ').filter((el) => !el.includes('e')).join(' ');
+
 };
 
+console.log(removeEWords('What time is it everyone?')); // 'What is it'
+console.log(removeEWords('Enter the building')); // 'building'
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

@@ -15,9 +15,17 @@ console.log(maxWithReduce([-2, -3, -7, 3])); // 3
 */
 
 let maxWithReduce = function(nums) {
-    // Your code here 
-};
+    let ans = nums.reduce((a, c) => {
 
+    if (c > a) {
+       a = c;
+
+    }return a; 0});
+return ans;
+};
+// console.log(Math.max(4, 6, 3, 5, 42, 4))
+console.log(maxWithReduce([4, 6, 3, 40, 42, 4])); // 42
+// console.log(maxWithReduce([-2, -3, -7, 3])); // 3
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
